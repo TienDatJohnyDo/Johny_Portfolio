@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -22,4 +22,46 @@
     color: white;
     text-decoration: none;
     font-weight: bold;
+  } */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and links */
+    padding: 0 20px;
+    background-color: #1a1a1a; /* Adjust background color as needed */
+    color: #ffffff;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; /* Adjust color if needed */
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  .nav-links li a:hover {
+    color: #9b7cff; /* Adjust hover color */
+  }
+  
+  /* Center the nav links in the middle top of the page */
+  .navbar {
+    position: fixed;  /* Keeps the navbar fixed at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .navbar .nav-links {
+    margin: 0 auto;
   }
