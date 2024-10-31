@@ -1,0 +1,15 @@
+.tech-stack {
+    background-color: #252525;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .tech-stack ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .tech-stack li {
+    list-style: none;
+  }

@@ -1,0 +1,15 @@
+.intro-section {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .resume-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #6c63ff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
