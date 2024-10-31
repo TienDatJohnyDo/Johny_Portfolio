@@ -1,15 +1,28 @@
 .tech-stack {
-    background-color: #252525;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .tech-stack ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
-  
-  .tech-stack li {
-    list-style: none;
-  }
+    padding-left: 30px; /* Left padding for the technology stack section */
+    font-family: 'Helvetica', sans-serif; /* Set font to Helvetica */
+}
+
+.tech-stack h3 {
+    font-size: 20px; /* Font size for "Technology Stack" heading */
+    color: #848383; /* Color for the heading text */
+    padding-left: 30px;
+    font-weight: normal;
+}
+
+.tech-stack ul {
+    padding-left: 50px; /* Remove left padding for the list */
+    display: flex; /* Use flexbox to create a row layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.tech-stack li {
+    font-size: 20px; /* Font size for the list items */
+    color: #FFFFFF; /* Color for the list items */
+    margin: 5px 0; /* Margin for vertical spacing */
+    list-style-type: disc; /* Use disc as bullet points */
+    list-style-position: inside; /* Position bullets inside the list item */
+    flex: 0 1 calc(33.33% - 10px); /* Set each item to take up 1/3 of the row width, minus margin */
+    padding-left: 20px; /* Add padding to create space for the bullet */
+}

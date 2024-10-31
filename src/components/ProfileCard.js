@@ -1,17 +1,29 @@
 import React from 'react';
 import './ProfileCard.css';
+import gradImage from '../images/Grad.jpg';
 
 const ProfileCard = () => {
   return (
     <div className="profile-card">
-      <img src="path/to/your-photo.jpg" alt="Johny Do" className="profile-image" />
+      <img src={gradImage} alt="Johny Do" className="profile-image" />
       <h2>Johny Do</h2>
-      <p>I am seeking roles within Analytics.</p>
+      <p>
+        Aspiring to contribute to <br /> 
+        <span className="analytics">analytics teams!</span>
+      </p>
       <div className="social-icons">
-        {/* Icons can be from Font Awesome or similar */}
-        <a href="#"><i className="fab fa-linkedin"></i></a>
-        <a href="#"><i className="fab fa-github"></i></a>
-        <a href="#"><i className="fas fa-file-alt"></i></a>
+        {/* LinkedIn Icon */}
+        <a href="https://www.linkedin.com/in/johnydo/" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-linkedin"></i>
+        </a>
+        {/* GitHub Icon */}
+        <a href="https://github.com/TienDatJohnyDo" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-github"></i>
+        </a>
+        {/* YouTube Icon */}
+        <a href="https://www.youtube.com/channel/UC0E6yHy-46NJHP596qP1T1g" target="_blank" rel="noopener noreferrer">
+          <i className="fab fa-youtube"></i>
+        </a>
       </div>
     </div>
   );

@@ -1,0 +1,47 @@
+.carousel-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    position: relative; /* For positioning the buttons and indicators */
+    width: 80%; /* Set a specific width */
+    margin: 0 auto; /* Center the carousel */
+    height: 500px; /* Set a fixed height for the container */
+    overflow: hidden; /* Hide overflow */
+    text-align: center; /* Center all text */
+  }
+  
+  .carousel-image {
+    max-width: calc(100% - 80px); /* Make the image responsive while leaving space for arrows */
+    max-height: 100%; /* Ensure the image fits within the fixed height */
+    display: block; /* Ensure the image behaves like a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 20px;
+  }
+  
+  .carousel-button {
+    background: none; /* Remove default button background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 2rem; /* Increase the size of the arrows */
+    color: white; /* Change arrow color */
+    position: absolute; /* Fix position */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust to truly center */
+    z-index: 1; /* Ensure buttons are above the image */
+  }
+  
+  .carousel-button.left {
+    left: 10px; /* Distance from the left */
+  }
+  
+  .carousel-button.right {
+    right: 10px; /* Distance from the right */
+  }
+  
+ 
+  .image-title {
+    font-size: 20px; /* Increase the font size for better visibility */
+    color: white; /* Change the text color to white */
+    margin-top: 10px; /* Add some space between the image and the title */
+    text-align: center; /* Ensure the text is centered */
+  }

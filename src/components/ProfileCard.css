@@ -1,19 +1,56 @@
 .profile-card {
-    background-color: #252525;
-    padding: 20px;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Add padding around the card */
+    background-color: #0C0C0C; /* Background color for the card */
+    border-radius: 20px; /* Rounded corners for the card */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     text-align: center;
-  }
-  
-  .profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-  }
-  
-  .social-icons a {
-    margin: 0 10px;
-    color: #f5f5f5;
-    font-size: 1.5rem;
-  }
+}
+
+.profile-image {
+    width: 100%; /* Make the image full width */
+    height: 318; /* Maintain aspect ratio */
+    max-width: 210px; /* Set a maximum width for the image */
+    border-radius: 8px; /* Optional: rounded corners for the image */
+}
+
+h2 {
+    margin: 10px 0 5px; /* Margin for the heading */
+    font-size: 30px; /* Change font size for Johny Do */
+}
+
+h2.analytics {
+    font-size: 24px; /* Change font size for the analytics text */
+    line-height: 1.5; /* Optional: Adjust line height for better spacing */
+    color: #848383;
+}
+
+p {
+    margin: 0 0 15px; /* Margin for the paragraph */
+    color: #848383;
+}
+
+.social-icons {
+    margin-top: 10px; /* Space above social icons */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Space between icons */
+    color: #333; /* Icon color */
+    font-size: 24px; /* Size of icons */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* Change color on hover for LinkedIn */
+}
+
+.social-icons a:nth-child(2):hover {
+    color: white; /* Change color on hover for GitHub */
+}
+
+.social-icons a:nth-child(3):hover {
+    color: #ff0000; /* Change color on hover for YouTube */
+}

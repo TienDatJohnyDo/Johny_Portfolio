@@ -1,67 +1,70 @@
-/* .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
+.navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 100;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
+    align-items: center; /* Vertically center the content */
+    justify-content: space-between; /* Space between logo and icon */
+    padding: 10px 20px; /* Reduced top/bottom padding for the navbar */
+    background-color: #000000; /* Background color for navbar */
+    color: #848383;
+    position: sticky; /* Keeps the navbar sticky */
+    top: 0; /* Aligns the navbar to the top of the viewport */
+    z-index: 1000; /* Ensures it stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Optional shadow effect */
+    
+}
+
+.logo {
+    font-size: 2rem; /* Adjusted font size for the logo */
     font-weight: bold;
-  } */
-  .navbar {
+    color: #ffffff; /* Logo color */
+}
+
+.nav-links {
     display: flex;
-    align-items: center;
-    justify-content: space-between; /* Space between logo and links */
-    padding: 0 20px;
-    background-color: #1a1a1a; /* Adjust background color as needed */
-    color: #ffffff;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff; /* Adjust color if needed */
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 20px;
+    gap: 15px; /* Adjusted gap between links */
     list-style-type: none;
-  }
-  
-  .nav-links li a {
+    flex-grow: 1; /* Allow nav links to grow */
+    justify-content: center; /* Center the nav links */
+    margin: 0; /* Remove default margin */
+}
+
+.nav-links li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #848383;
     font-weight: 500;
+    font-size: 20px; /* Adjusted font size for nav links */
+}
+
+.nav-links li a:hover {
+    color: #e6d7ff; /* Hover color */
+}
+
+.navbar-icon {
+    width: 24px; /* Adjust width of the image */
+    height: 24px; /* Adjust height of the image */
+    margin-left: 10px; /* Add some space to the left */
+    filter: invert(100%);
+}
+.navbar-icon-container {
+    position: relative; /* Set position to relative to position the modal inside */
   }
   
-  .nav-links li a:hover {
-    color: #9b7cff; /* Adjust hover color */
+  .modal-popup {
+    position: absolute;
+    top: -35px; /* Adjust this to position the pop-up above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333; /* Dark background for the pop-up */
+    color: white; /* White text */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px; /* Adjust font size */
+    white-space: nowrap; /* Prevent text from wrapping */
+    z-index: 1000; /* Ensure the pop-up is above other elements */
+    opacity: 0;
+    transition: opacity 0.3s; /* Smooth transition */
+    pointer-events: none; /* Make the pop-up not interactable */
   }
   
-  /* Center the nav links in the middle top of the page */
-  .navbar {
-    position: fixed;  /* Keeps the navbar fixed at the top */
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-  
-  .navbar .nav-links {
-    margin: 0 auto;
+  .navbar-icon-container:hover .modal-popup {
+    opacity: 1; /* Show the pop-up on hover */
   }

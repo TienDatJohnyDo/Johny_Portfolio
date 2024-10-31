@@ -30,9 +30,3 @@
     transform: scale(1.05);
   }
   
-  /* Optional: Different colors for each box */
-  .box1 { background-color: #e0f7fa; }
-  .box2 { background-color: #fce4ec; }
-  .box3 { background-color: #e8f5e9; }
-  .box4 { background-color: #fff3e0; }
-  .box5 { background-color: #ede7f6; }

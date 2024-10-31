@@ -6,22 +6,120 @@
 }
 
 body {
-  background-color: #181818;
+  background-color: #000000; /* Overall background color */
   color: #f5f5f5;
 }
 
+.App {
+  width: 100%; /* Full width for the app */
+  max-width: 1200px; /* Optional max width for content */
+  margin: 0 auto; /* Center the content */
+  padding: 20px; /* Padding around the App */
+  padding-bottom: 80px; /* Adjust if your footer height changes */
+  margin-top: 10px; /* Add top margin for space below the navbar */
+}
+
 .container {
-  display: flex;
-  padding: 20px;
+  display: flex; /* Flexbox layout for the main content */
+  gap: 20px; /* Space between the left and right columns */
 }
 
 .left-column {
-  flex: 1;
+  flex: 1; /* Takes up 1 part of the available space */
+}
+
+.right-column {
+  flex: 2; /* Takes up 2 parts of the available space */
+}
+
+.intro-tech-container {
+  display: flex; /* Flexbox for Intro and Tech Stack */
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px; /* Space between the two sections */
+}
+
+.profile-card,
+.intro-section,
+.tech-stack,
+.projects-section,
+.reach-out-section {
+  margin-top: 5px;
+  background-color: #0c0c0c; /* Bento box color */
+  padding: 20px;
+  border-radius: 20px; /* Set the corner radius to 20px for all bento boxes */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
+  width: 100%; /* Make boxes take full width of their container */
+}
+
+.intro-section,
+.tech-stack {
+  height: auto; /* Allow the height to be determined by content */
+}
+
+.projects-section,
+.reach-out-section {
+  margin-top: 20px; /* Add spacing above the sections */
+}
+
+.intro-section {
+  height: 300px; /* Increase this value for more height */
+}
+
+.tech-stack {
+  height: 167px; /* Increase this value for more height */
 }
 
 .right-column {
   flex: 2;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 20px; /* Space between sections */
+}
+
+.intro-tech-container {
+  display: flex;
+  flex-direction: column; /* Stack Intro and Tech vertically */
+  gap: 20px; /* Space between sections */
+}
+
+.footer {
+  background-color: #0c0c0c; /* Background color for the footer */
+  padding: 20px; /* Padding inside the footer */
+  text-align: center; /* Center-align footer content */
+  border-radius: 0 0 20px 20px; /* Rounded corners at the bottom for the footer */
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for effect */
+  color: #f5f5f5; /* Text color for footer */
+}
+
+.footer {
+  background-color: #000000; /* Background color for the footer */
+  padding: 20px; /* Padding inside the footer */
+  text-align: center; /* Center-align footer content */
+  color: #f5f5f5; /* Text color for footer */
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 1098px) {
+  .container {
+    flex-direction: column; /* Stack the columns vertically */
+  }
+
+  .left-column,
+  .right-column {
+    flex: none; /* Reset flex to allow for stacking */
+    width: 100%; /* Full width for both columns */
+  }
+
+  .intro-tech-container {
+    flex-direction: column; /* Ensure Intro and Tech stack vertically */
+  }
+
+  .projects-section,
+  .reach-out-section {
+    margin-top: 10px; /* Ensure space above sections */
+  }
+}
+
+html {
+  scroll-behavior: smooth; /* Enables smooth scrolling */
 }

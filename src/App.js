@@ -17,12 +17,14 @@ function App() {
           <ProfileCard />
         </div>
         <div className="right-column">
-          <IntroSection />
-          <TechStack />
-          <ProjectsSection />
-          <ReachOutSection />
+          <div className="intro-tech-container">
+            <IntroSection />
+            <TechStack />
+          </div>
         </div>
       </div>
+      <ProjectsSection />
+      <ReachOutSection />
       <Footer />
     </div>
   );

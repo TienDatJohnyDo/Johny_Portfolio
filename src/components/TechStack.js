@@ -7,13 +7,13 @@ const TechStack = () => {
       <h3>Technology Stack:</h3>
       <ul>
         <li>Python</li>
-        <li>SQL</li>
-        <li>Excel</li>
         <li>Tableau</li>
-        <li>Git</li>
-        <li>PySpark</li>
         <li>ML/AI</li>
+        <li>SQL</li>
+        <li>Git</li>
         <li>Databricks</li>
+        <li>Excel</li>
+        <li>PySpark</li>
         <li>Jupyter</li>
       </ul>
     </div>

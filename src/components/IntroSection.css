@@ -1,15 +1,43 @@
 .intro-section {
-    background-color: #333333;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .resume-button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #6c63ff;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+    background-color: #333333; /* Background color for the intro section */
+    padding: 20px; /* Padding around the section */
+    border-radius: 10px; /* Rounded corners */
+    padding-left: 20px; /* Additional left padding for the section */
+    font-family: 'Helvetica', sans-serif; /* Set font to Helvetica */
+}
+
+.intro-heading {
+    font-size: 20px; /* Font size for the "Hi I'm Johny Do!" */
+    margin: 20px 0 10px; /* Add margin-top and bottom for spacing */
+    padding-left: 30px; /* Additional left padding for the heading */
+    color: #848383; /* Color for the heading text */
+    font-weight: normal; /* Set font weight to normal (not bold) */
+    
+}
+
+.intro-text {
+    font-size: 30px; /* Font size for the main text */
+    margin-bottom: 20px; /* Space below the text */
+    padding-left: 30px; /* Additional left padding for the text */
+    color: #FFFFFF; /* Color for the text */
+    margin-top: 15px; /* Space above the button */
+}
+
+.resume-button {
+    margin-top: 30px; /* Space above the button */
+    padding: 10px 20px; /* Padding for the button */
+    border: none; /* No border */
+    background-color: #e6d7ff; /* Background color for the button */
+    color: black; /* Change text color to black */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-family: 'Helvetica', sans-serif; /* Set font to Helvetica */
+    margin-left: 30px; /* Align the button to the left */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    
+}
+
+.resume-button i {
+    margin-right: 8px; /* Space between icon and text */
+}
