@@ -49,6 +49,7 @@ body {
   border-radius: 20px; /* Set the corner radius to 20px for all bento boxes */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
   width: 100%; /* Make boxes take full width of their container */
+  
 }
 
 .intro-section,
@@ -66,7 +67,7 @@ body {
 }
 
 .tech-stack {
-  height: 167px; /* Increase this value for more height */
+  height: 183px; /* Increase this value for more height */
 }
 
 .right-column {
@@ -83,18 +84,11 @@ body {
 }
 
 .footer {
-  background-color: #0c0c0c; /* Background color for the footer */
+  background-color: #000000; /* Background color for the footer */
   padding: 20px; /* Padding inside the footer */
   text-align: center; /* Center-align footer content */
   border-radius: 0 0 20px 20px; /* Rounded corners at the bottom for the footer */
   box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for effect */
-  color: #f5f5f5; /* Text color for footer */
-}
-
-.footer {
-  background-color: #000000; /* Background color for the footer */
-  padding: 20px; /* Padding inside the footer */
-  text-align: center; /* Center-align footer content */
   color: #f5f5f5; /* Text color for footer */
 }
 
@@ -118,6 +112,57 @@ body {
   .reach-out-section {
     margin-top: 10px; /* Ensure space above sections */
   }
+}
+
+/* Bento Box Styles */
+.bento-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Adjust based on your design */
+  margin: 20px 0; /* Margin above and below each bento box */
+  gap: 20px; /* Add this line for spacing between bento boxes */
+}
+
+/* Adjust for small screens */
+@media (max-width: 600px) {
+  .bento-box {
+    flex-direction: row; /* Align bento boxes in a line */
+    flex-wrap: wrap; /* Allow wrapping if there's not enough space */
+  }
+
+  .box {
+    flex: 1 1 calc(50% - 20px); /* Two boxes per row on small screens */
+    margin: 10px; /* Adjust margin as needed */
+  }
+}
+
+.box {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #0c0c0c; /* Background color for boxes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+.about-card {
+  background-color: #0c0c0c; /* Grey background color for the card */
+  padding: 20px; /* Adjust padding as needed */
+  padding-left: 20px; /* Add left padding for the About Me card */
+  border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+.about-card p {
+  color: white; /* White text for the paragraph */
+  line-height: 1.6; /* Adjust line spacing for readability */
+  padding-left: 20px; /* Add left padding for the paragraph */
+}
+
+.about-card h1 {
+  color: #848383; /* Grey color for the About Me title */
+  line-height: 1.6; /* Adjust line spacing for readability */
+  padding-left: 20px; /* Add left padding for the paragraph */
 }
 
 html {

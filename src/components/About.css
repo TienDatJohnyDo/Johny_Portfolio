@@ -1,40 +1,45 @@
 .about-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-  }
-  
-  .bento-box {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px; /* Adjust based on your design */
-    margin: 20px 0;
-  }
-  
-  .box {
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ccc; /* Add a border for better visibility */
-    border-radius: 8px; /* Rounded corners */
-    background-color: #fff; /* Background color for boxes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
-  }
-  
-  .profile-card {
-    /* Specific styles for the profile card if needed */
-  }
-  
-  .about-card {
-    /* Specific styles for the about card if needed */
-  }
-  
-  .experience-card {
-    /* Specific styles for the experience card if needed */
-  }
-  
-  .education-card {
-    /* Specific styles for the education card if needed */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 101.7%;
+  margin: 20px 0 20px -10px; 
+}
+
+.bento-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Adjust based on your design */
+  margin: 20px 0; /* Margin above and below each bento box */
+  gap: 20px; /* Add this line for spacing between bento boxes */
+}
+
+.box {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #0c0c0c; /* Background color for boxes */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+.about-card {
+  background-color: #0c0c0c; /* Grey background color for the card */
+  padding: 20px; /* Adjust padding as needed */
+  padding-left: 20px; /* Add left padding for the About Me card */
+  border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+.about-card p {
+  color: white; /* White text for the paragraph */
+  line-height: 1.6; /* Adjust line spacing for readability */
+  padding-left: 20px; /* Add left padding for the paragraph */
+}
+
+.about-card h1 {
+  color: #848383; /* Grey color for the About Me title */
+  line-height: 1.6; /* Adjust line spacing for readability */
+  padding-left: 20px; /* Add left padding for the paragraph */
+}

@@ -4,7 +4,7 @@
     border-radius: 10px; /* Rounded corners */
     color: #FFFFFF; /* Text color */
     font-family: 'Helvetica', sans-serif; /* Set font to Helvetica */
-    text-align: center; /* Center align text */
+    text-align: center; /* Center align text for the entire section */
     padding-top: 100px;
 }
 
@@ -12,22 +12,24 @@
     font-size: 30px; /* Font size for the heading */
     color: #FFFFFF; /* Color for the heading */
     font-weight: bold; /* Bold font for the heading */
-    
+    margin-bottom: 20px; /* Space below the heading */
+    text-align: center; /* Ensure heading is centered */
 }
 
 .description {
     margin: 10px 0; /* Space above and below the paragraph */
     font-size: 18px; /* Font size for the paragraph */
     padding: 10px;
+    text-align: center; /* Ensure description text is centered */
 }
 
 .connect-buttons {
     margin-top: 15px; /* Space above the button */
     padding: 10px;
+    text-align: center; /* Center align buttons if necessary */
 }
 
 .connect-button {
-    
     padding: 10px 20px; /* Padding for the button */
     background-color: #e6d7ff; /* Background color for the button */
     color: black; /* Text color */
@@ -35,5 +37,13 @@
     border-radius: 5px; /* Rounded corners for the button */
     cursor: pointer; /* Pointer cursor on hover */
     font-family: 'Helvetica', sans-serif; /* Set font to Helvetica */
-    
+    display: inline-flex; /* Align icon and text in a row */
+    align-items: center; /* Center icon vertically with text */
+    justify-content: center; /* Center button content */
+}
+
+.mail-icon {
+    margin-right: 10px; /* Adjust this value to increase or decrease space */
+    font-size: 20px; /* Optional: Set a size for the icon */
+    color: black; /* Ensure the icon matches the text color */
 }

@@ -68,3 +68,13 @@
   .navbar-icon-container:hover .modal-popup {
     opacity: 1; /* Show the pop-up on hover */
   }
+  .nav-links a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Add cursor pointer for the navbar links specifically */
+.nav-links a:hover {
+     /* Optional: underline on hover */
+}

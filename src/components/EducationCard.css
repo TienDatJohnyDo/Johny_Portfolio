@@ -1,16 +1,48 @@
 .education-card {
-    padding: 20px;
-    background-color: #f9f9f9; /* Light background for contrast */
-    border-radius: 8px;
-    border: 1px solid #ddd; /* Light border */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  }
-  
-  .education-item {
-    margin-bottom: 15px; /* Space between items */
-  }
-  
-  .education-item h3 {
-    margin: 0;
-    color: #333; /* Dark text for headings */
-  }
+  max-width: 1000px; /* Match the width of experience card */
+  margin: 0 auto; /* Center the card */
+  padding: 20px; /* Padding around the card */
+  font-family: Helvetica, sans-serif; /* Font family */
+  margin-right: 10px; 
+}
+
+h2 {
+  text-align: left; /* Align the title to the left */
+  margin-bottom: 20px; /* Space below the title */
+}
+
+.education-item {
+  display: flex; /* Flexbox layout for item */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Space between items */
+  border-bottom: 1px solid #ccc; /* Bottom border for separation */
+  padding-bottom: 15px; /* Padding below the item */
+}
+
+.university-logo {
+  width: 80px; /* Size for the university logo */
+  height: 80px; /* Maintain aspect ratio */
+  margin-right: 20px; /* Space between logo and text */
+  object-fit: contain; /* Fit logo within dimensions */
+  border-radius: 6px; /* Rounded corners for the logo */
+}
+
+.education-details {
+  flex: 1; /* Allow details to take available space */
+}
+
+.education-date {
+  font-size: 16px; /* Font size for date */
+  color: #777; /* Color for the date */
+  margin-bottom: 5px; /* Space below the date */
+}
+
+.education-title {
+  font-size: 20px; /* Font size for title */
+  margin: 5px 0; /* Space above and below the title */
+}
+
+.education-university {
+  font-size: 18px; /* Font size for university name */
+  color: #555; /* Color for university name */
+}

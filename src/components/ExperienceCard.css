@@ -1,16 +1,48 @@
 .experience-card {
-    padding: 20px;
-    background-color: #f9f9f9; /* Light background for contrast */
-    border-radius: 8px;
-    border: 1px solid #ddd; /* Light border */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  }
-  
-  .experience-item {
-    margin-bottom: 15px; /* Space between items */
-  }
-  
-  .experience-item h3 {
-    margin: 0;
-    color: #333; /* Dark text for headings */
-  }
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Helvetica, sans-serif, sans-serif;
+  margin-left: 10px;
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.experience-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.company-logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  object-fit: contain; /* Ensures the logo fits within the given dimensions */
+  border-radius: 6px;
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.experience-date {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.experience-title {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.experience-company {
+  font-size: 18px;
+  color: #555;
+}
