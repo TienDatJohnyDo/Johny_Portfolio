@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-import ProfileCard from './ProfileCard';
 import ExperienceCard from './ExperienceCard'; // Ensure these components exist
 import EducationCard from './EducationCard';   // Ensure these components exist
 
