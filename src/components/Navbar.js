@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [showModal, setShowModal] = useState(false);
@@ -22,8 +23,8 @@ function Navbar() {
     <nav className="navbar">
       <h1 className="logo">Johny</h1>
       <ul className="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
         <li><a onClick={() => scrollToSection('projects')}>Projects</a></li>
         <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
       </ul>

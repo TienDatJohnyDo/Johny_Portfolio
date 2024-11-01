@@ -1,0 +1,40 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .bento-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Adjust based on your design */
+    margin: 20px 0;
+  }
+  
+  .box {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Add a border for better visibility */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* Background color for boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  }
+  
+  .profile-card {
+    /* Specific styles for the profile card if needed */
+  }
+  
+  .about-card {
+    /* Specific styles for the about card if needed */
+  }
+  
+  .experience-card {
+    /* Specific styles for the experience card if needed */
+  }
+  
+  .education-card {
+    /* Specific styles for the education card if needed */
+  }
