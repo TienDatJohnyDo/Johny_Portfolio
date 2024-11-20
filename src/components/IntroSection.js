@@ -1,6 +1,6 @@
 import React from 'react';
 import './IntroSection.css'; // Import your updated CSS file
-import Pdf from '../pdf/Resume2024.pdf'; // Import the PDF file
+import Pdf from '../pdf/Johny_Do_Resume.pdf'; // Import the PDF file
 
 const IntroSection = () => {
     return (
